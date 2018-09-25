@@ -64,3 +64,147 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 876px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* ------------------ Header ------------------*/
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+    flex-direction: row;
+}
+
+nav span {
+	padding: 20px;
+	color: #9ba6b1;
+}
+
+.logo {
+	padding-top: 10px;
+}
+
+.header-title-container {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.header-title-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 50px;
+}
+
+.header-image {
+	align-self: flex-end;
+}
+
+button {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px 25px;
+    background: none;
+	border: 1px solid black;
+	width: 150px;
+}
+
+.header-title {
+	font-size: 75px;
+    text-align: center;
+}
+
+
+/* ------------------ Main Section ------------------*/
+
+.main {
+	width: 100%;
+	border-top: 1px solid slategray;
+	border-bottom: 1px solid slategray;
+	padding-top: 50px;
+}
+
+.main-top-container:first-child,
+.main-bottom-container:first-child {
+	padding-right: 10px;
+}
+
+.main-top-container:last-child,
+.main-bottom-container:last-child  {
+	padding-left: 10px;
+	float: right;
+}
+
+.main-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+
+.main-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+/* ------------------ Footer ------------------*/
+footer {
+	padding: 50px 0;
+}
+
+footer > * {
+	padding-bottom: 20px;
+}
+
+footer h2 {
+	margin: 0;
+}
+
+#footer-copyright {
+	text-align: center;
+	padding: 20px 0;
+}	
+
+/* ------------------ Services Page ------------------*/
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 30px 0;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.services-description {
+	width: 45%;
+	background: lightgray;
+	border: 1px solid black;
+	padding: 25px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+}
+
+.services-description button {
+	border-radius: 5px;
+	background: white;
+}
+
+.services-facts {
+	display: flex;
+}
