@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5 {
 .nav-container {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 
 nav {
@@ -82,13 +83,18 @@ nav {
     flex-direction: row;
 }
 
-nav span {
+nav > * {
 	padding: 20px;
 	color: #9ba6b1;
 }
 
 .logo {
 	padding-top: 10px;
+}
+
+img.logo  {
+	height: 100%;
+    width: auto;
 }
 
 .header-title-container {
@@ -115,7 +121,7 @@ button {
     padding: 5px 25px;
     background: none;
 	border: 1px solid black;
-	width: 150px;
+	width: 140px;
 }
 
 .header-title {
@@ -171,12 +177,20 @@ footer h2 {
 	margin: 0;
 }
 
-#footer-copyright {
+#footer-copyright,
+footer p {
 	text-align: center;
 	padding: 20px 0;
 }	
 
 /* ------------------ Services Page ------------------*/
+.inner-banner {
+	margin-top: 30px;
+}
+
+.inner-header-text {
+	margin-top: 30px;
+}
 
 .services-container {
 	display: flex;
@@ -189,15 +203,19 @@ footer h2 {
 }
 
 .services-description {
-	width: 45%;
-	background: lightgray;
+	width: 48%;
+	background: #f4f3f4;
 	border: 1px solid black;
 	padding: 25px;
 	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 300px;
+	height: 250px;
+}
+
+.services-description h2 {
+	margin-bottom: 0;
 }
 
 .services-description button {
@@ -207,4 +225,19 @@ footer h2 {
 
 .services-facts {
 	display: flex;
+	justify-content: space-between;
+}
+
+.services-facts-left {
+	width: 45%;
+}
+
+.services-facts-left ul {
+	list-style-position: inside;
+	padding: 20px 0;
+}
+
+.services-facts-left ul li {
+	list-style-type: square;
+	padding-bottom: 10px;
 }
