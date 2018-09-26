@@ -241,3 +241,86 @@ footer p {
 	list-style-type: square;
 	padding-bottom: 10px;
 }
+
+/* ------------------ Vision Page ------------------*/
+
+.vision-container {
+	display: flex;
+	margin-top: 50px;
+	padding: 50px 0;
+	border-top: .5px solid #B4B7BA;
+	border-bottom: .5px solid #B4B7BA;
+}
+
+/* .vision-left {
+	width: 36%;
+} */
+.vision-left img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.vision-right {
+	display: flex;
+    flex-direction: column;
+    width: 64%;
+    justify-content: space-between;
+}
+
+.vision-right-top {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.vision-right-top-box {
+	background: #DBB1CD;
+	width: 48%;
+    padding: 35px;
+    margin-bottom: 5px;
+}
+
+.vision-right-bottom {
+    padding: 35px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+	.nav-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	nav{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.container {
+		width: 90%;
+	}
+
+	.inner-banner img {
+		max-width: 100%;
+	}
+	.services-container {
+		flex-direction: column;
+	}
+	
+	.services-description {
+		width: 100%;
+		align-items: center;
+	}
+
+	.services-facts {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.services-facts-left {
+		text-align: center;
+		width: 100%;
+	}
+
+	.services-facts-right img {
+		max-width: 100%;
+	}
+}
