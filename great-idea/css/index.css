@@ -282,7 +282,9 @@ footer p {
     margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
+	
+
 	.nav-container {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -300,15 +302,17 @@ footer p {
 	.inner-banner img {
 		max-width: 100%;
 	}
+
 	.services-container {
 		flex-direction: column;
-	}
-	
-	.services-description {
-		width: 100%;
 		align-items: center;
 	}
 
+	.services-description {
+		width: 80%;
+		align-items: center;
+	}
+	
 	.services-facts {
 		flex-direction: column;
 		align-items: center;
@@ -321,5 +325,27 @@ footer p {
 
 	.services-facts-right img {
 		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.services-description {
+		width: 100%;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.services-description {
+		height: auto;
+	}
+
+	.services-description p {
+		display: none;
+	}
+
+	.services-description button {
+		margin-top: 20px;
 	}
 }
